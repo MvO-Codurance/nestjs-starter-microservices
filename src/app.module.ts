@@ -7,7 +7,7 @@ import { MathClientModule } from './math-client/math-client.module';
 
 @Module({
   imports: [MathModule, MathClientModule],
-  controllers: [AppController, MathController],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}

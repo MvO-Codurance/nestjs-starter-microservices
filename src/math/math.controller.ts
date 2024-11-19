@@ -6,6 +6,7 @@ import { from, Observable } from 'rxjs';
 export class MathController {
   @MessagePattern({ cmd: 'sum' })
   accumulate(data: number[]): number {
+    console.log('MathController::accumulate()');
     return (data || []).reduce((a, b) => a + b);
   }
 
